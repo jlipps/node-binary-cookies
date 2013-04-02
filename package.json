@@ -1,0 +1,47 @@
+{
+  "name": "binary-cookies",
+  "description": "Binary cookie file parser",
+  "tags": [
+    "cookies",
+    "apple",
+    "safari"
+  ],
+  "version": "0.0.1",
+  "author": "Jonathan Lipps <jlipps@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlipps/node-binary-cookies"
+  },
+  "bugs": {
+    "url": "https://github.com/jlipps/node-binary-cookies/issues"
+  },
+  "engines": [
+    "node"
+  ],
+  "main": "./parse.js",
+  "bin": {
+    "parse_cookies": "./parse.js",
+  },
+  "directories": {
+  },
+  "dependencies": {
+    "underscore": "~1.4.3",
+    "colors": "~0.6.0-1",
+    "argparse": "~0.1.10",
+    "path": "~0.4.9",
+    "winston": "~0.6.2",
+    "bufferpack": "0.0.6",
+    "async": "~0.2.6"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "mocha": "~1.8.1",
+    "should": "~1.2.1",
+    "grunt": "~0.4.0",
+    "grunt-cli": "~0.1.6",
+    "grunt-mocha-test": "~0.2.0"
+  }
+}
+
