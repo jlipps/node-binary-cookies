@@ -7,7 +7,7 @@
     "safari"
   ],
   "version": "0.0.1",
-  "author": "Jonathan Lipps <jlipps@gmail.com>",
+  "author": "Jonathan Lipps",
   "repository": {
     "type": "git",
     "url": "https://github.com/jlipps/node-binary-cookies"
@@ -20,11 +20,11 @@
   ],
   "main": "./parse.js",
   "bin": {
-    "parse_cookies": "./parse.js",
+    "parse_cookies": "./parse.js"
   },
   "dependencies": {
     "underscore": "~1.4.3",
-    "colors": "~0.6.0-1",
+    "colors": "~0.6.1",
     "argparse": "~0.1.10",
     "path": "~0.4.9",
     "winston": "~0.6.2",
