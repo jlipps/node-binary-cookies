@@ -14,7 +14,6 @@ module.exports = function(grunt) {
     }
     , mochaTest: {
       unit: ['test/*.js']
-      , appiumutils: ['test/functional/appium/appiumutils.js']
     }
     , mochaTestConfig: {
       options: {
