@@ -22,8 +22,6 @@
   "bin": {
     "parse_cookies": "./parse.js",
   },
-  "directories": {
-  },
   "dependencies": {
     "underscore": "~1.4.3",
     "colors": "~0.6.0-1",
