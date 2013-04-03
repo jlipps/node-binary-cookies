@@ -178,6 +178,7 @@ Cookies.prototype._parseCookieData = function(pageIndex, cookieIndex) {
       str += curChar;
     } while (curChar !== "\u0000");
     data[key] = new Buffer(str, "ascii").toString("utf8").trim();
+    data[key] = data[key].replace("\u0000", "");
   });
   c.data = data;
   return data;
