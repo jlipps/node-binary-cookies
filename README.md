@@ -1,6 +1,8 @@
 node-binary-cookies
 ===================
 
+[![Build Status](https://secure.travis-ci.org/jlipps/node-binary-cookies.png?branch=master)](http://travis-ci.org/jlipps/node-binary-cookies)
+
 Binary cookies parser for Node.
 
 Some Apple browsers like Safari and Mobile Safari store their cookies in
