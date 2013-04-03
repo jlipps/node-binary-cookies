@@ -41,3 +41,7 @@ This should all be self-explanatory except flags:
 
 Have fun! I wrote this for [Appium](http://github.com/appium/appium), check it
 out!
+
+Acknowledgements
+--------
+I learned about the spec from [this blog entry](http://www.securitylearn.net/2012/10/27/cookies-binarycookies-reader/). Thanks Internet dude!
