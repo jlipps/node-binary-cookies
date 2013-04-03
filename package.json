@@ -6,7 +6,7 @@
     "apple",
     "safari"
   ],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Jonathan Lipps",
   "repository": {
     "type": "git",
@@ -18,10 +18,7 @@
   "engines": [
     "node"
   ],
-  "main": "./parse.js",
-  "bin": {
-    "parse_cookies": "./parse.js"
-  },
+  "main": "./cookies.js",
   "dependencies": {
     "underscore": "~1.4.3",
     "colors": "~0.6.0-1",
