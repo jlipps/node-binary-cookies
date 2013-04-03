@@ -11,13 +11,21 @@ var Cookies = function() {
 Cookies.prototype.parse = function(cookiePath, cb) {
   this._init();
   this.cookiePath = cookiePath;
-  this._open(function(err) {
-    if (err) {
-      cb(err);
-    } else {
-      cb(null);
-    }
-  });
+  this._open(_.bind(function(err) {
+    if (err) return cb(err);
+    this._getNumPages();
+    this._getPageSizes();
+    this._getPages();
+    _.each(this.pages, _.bind(function(page, i) {
+      this._getNumCookies(i);
+      this._getCookieOffsets(i);
+      this._getCookieData(i);
+      _.each(this.pages[i].cookies, _.bind(function(cookie, j) {
+        this.cookies.push(this._parseCookieData(i, j));
+      }, this));
+    }, this));
+    cb(null, this.cookies);
+  }, this));
 };
 
 Cookies.prototype._init = function() {
@@ -28,6 +36,7 @@ Cookies.prototype._init = function() {
   this.bufSize = 0;
   this.pages = [];
   this.pageSizes = [];
+  this.cookies = [];
 };
 
 Cookies.prototype._open = function(cb) {

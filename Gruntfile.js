@@ -13,7 +13,7 @@ module.exports = function(grunt) {
       }
     }
     , mochaTest: {
-      unit: ['test/*.js']
+      all: ['test/*.js']
     }
     , mochaTestConfig: {
       options: {
@@ -26,8 +26,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.registerTask('lint', ['jshint']);
-  grunt.registerTask('test', ['jshint', 'mochaTest:unit']);
-  grunt.registerTask('unit', 'mochaTest:unit');
+  grunt.registerTask('test', ['jshint', 'mochaTest:all']);
   grunt.registerTask('default', ['test']);
 };
 

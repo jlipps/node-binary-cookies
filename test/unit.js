@@ -8,7 +8,7 @@ var binaryCookies = require('../cookies')
   , BAD_COOKIES = path.resolve(__dirname, 'NotCookies.binarycookies')
   , APPLE_COOKIES = path.resolve(__dirname, 'AppleStore.binarycookies');
 
-describe('parser', function() {
+describe('parser unit tests', function() {
   var cookies = null;
 
   before(function() {
