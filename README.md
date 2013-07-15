@@ -11,9 +11,10 @@ have a file at `/my/path/to/Cookies.binarycookies`. You can parse it like so:
 
 ```js
 var CookieParser = require('./cookies')
+  , p = CookieParser()
   , cookiePath = "/my/path/to/Cookies.binarycookies";
 
-CookieParser.parse(cookiePath, function(err, cookies) {
+p.parse(cookiePath, function(err, cookies) {
   console.log(cookies[0]);
 });
 ```
